@@ -5,6 +5,13 @@ export const metadata = {
   description: "3rd International Conference on Applications of Machine Intelligence and Data Analytics (ICAMIDA 2027), August 19-20, 2027. Organized by MGM University, Chhatrapati Sambhajinagar, Maharashtra, India.",
 };
 
+export const viewport = {
+  width: "device-width",
+  intitialScale: 1,
+  maximumScale: 1,
+  userScalable: false,  
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
