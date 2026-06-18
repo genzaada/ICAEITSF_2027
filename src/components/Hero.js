@@ -80,14 +80,6 @@ export default function Hero() {
           </Button>
         </div>
       </div>
-
-      <div className="hero-scroll-hint">
-        <a href="#about" onClick={(e) => handleScrollTo(e, "about")} aria-label="Scroll down">
-          <div className="scroll-mouse">
-            <div className="scroll-wheel"></div>
-          </div>
-        </a>
-      </div>
     </section>
   );
 }
