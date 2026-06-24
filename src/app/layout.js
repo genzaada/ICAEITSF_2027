@@ -1,8 +1,8 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "ICAEITSF 2027 | MGM University",
-  description: "3rd International Conference on Applications of Machine Intelligence and Data Analytics (ICAMIDA 2027), August 19-20, 2027. Organized by MGM University, Chhatrapati Sambhajinagar, Maharashtra, India.",
+  title: "SANKALP 2027 | MGM University",
+  description: "International Conference on Advances of Engineering & Intelligent Technologies for a Sustainable Future  (SANKALP 2027), January 22-23, 2027. Organized by MGM University, Chhatrapati Sambhajinagar, Maharashtra, India.",
 };
 
 export const viewport = {
