@@ -4,10 +4,8 @@ import Card from "./ui/Card";
 export default function Contact() {
   const contacts = [
     {
-      role: "Program Chair",
-      name: "Mr. Siddiqui Javed A.",
       email: "hodmechsoet@mgmu.ac.in",
-      phone: "+91-8806258898",
+      phone: "+91-",
       icon: (
         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
@@ -15,10 +13,9 @@ export default function Contact() {
       ),
     },
     {
-      role: "Program Co-chair",
-      name: "Mr. Domale Anujkumar P.",
+      
       email: "hodcivilsoet@mgmu.ac.in",
-      phone: "+91-9657788111",
+      phone: "+91-",
       icon: (
         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />

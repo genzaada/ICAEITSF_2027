@@ -17,11 +17,12 @@ export default function Committee() {
     { name: "Hon. Dr. P. M. Jadhav", role: "Vice Chairman, MGM", status: "Patron" },
     { name: "Hon. Shri Ankushrao Kadam", role: "Chancellor & Secretary, MGM University", status: "Patron" },
     { name: "Hon. Dr. Vilas Sapkal", role: "Vice Chancellor, MGM University", status: "Patron" },
+    { name: "Dr. Ashish Gadekar", role: "Registrar, MGM University", status: "Patron" },
     { name: "Dr. Parminder Kaur Dhingra", role: "Director SOET, MGM University", status: "General Chair" },
   ];
 
   const steering = [
-    { name: "Dr. Ashish Gadekar", role: "Registrar, MGM University" },
+    
     { name: "Dr. H. H. Shinde", role: "Dean, Faculty of Engineering & Technology, MGM University" },
     { name: "Dr. Rekha Shelke", role: "Dean, Faculty of Social Sciences and Humanities" },
     { name: "Dr. ABC", role: "Dean, Basic and Applied Sciences, MGM University" },
@@ -30,12 +31,12 @@ export default function Committee() {
   ];
 
   const organizing = [
-    { name: "Mr. Siddiqui Javed A.", role: "Program Chair | HoD, Dept. of Mech, SOET" },
-    { name: "Mr. Domale Anujkumar P.", role: "Program Chair | HoD, Dept. of Civil Engineering, SOET" },
-    { name: "Mrs. Rathi Sarika R.", role: "Organizing Chair | HoD, Dept. of Computer Science Engineering, SOET" },
-    { name: "Mr. Kale Piyush G.", role: "Organizing Co-chair | HoD Dept. of Electronics Engineering, SOET" },
-    { name: "Mr. Jadhav Mohan S.", role: "Organizing Committee | HoD Dept. of Electrical Engineering , SOET" },
-    { name: "Dr. ABC", role: "Organizing Committee | IITB, GRSS Chair" },
+    { name: "Mr. Javed A. Siddiqui", role: "Convener | HoD, Dept. of Mech, SOET" },
+    { name: "Mr. Anuj P. Domale", role: "Co-Convener | HoD, Dept. of Civil Engineering, SOET" },
+    { name: "Ms. Sarika R. Rathi", role: "Organizing Chair | HoD, Dept. of Computer Science Engineering, SOET" },
+    { name: "Mr. Piyush G. Kale", role: "Organizing Co-chair | HoD Dept. of Electronics Engineering, SOET" },
+    { name: "Mr. Mohan S. Jadhav", role: "Organizing Committee | HoD Dept. of Electrical Engineering , SOET" },
+    { name: "Ms. Kajal C. Agrawal", role: "Organizing Committee | IITB, GRSS Chair" },
     { name: "Dr. DEF", role: "Organizing Committee | Professor & Head, Computer Engg, SFIT" },
     { name: "Dr. GHI", role: "Organizing Committee | System Council Chair, Nagpur" },
     { name: "Dr. JKL", role: "Organizing Committee | Dean, R&D and Innovation, MIT" },

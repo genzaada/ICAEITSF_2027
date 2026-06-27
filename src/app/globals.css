@@ -597,11 +597,7 @@ a {
    ABOUT / OVERVIEW SECTION
    ========================================================================== */
 .overview-split-layout {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 48px;
-  margin-bottom: 60px;
-  align-items: stretch;
+  margin-top:40px;
 }
 
 .overview-text-col {
@@ -611,11 +607,14 @@ a {
 }
 
 .about-text-block {
-  display: flex;
-  padding: 0 24px;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-bottom: 60px;
+
+    max-width:900px;
+    margin:0 auto 70px;
+    padding:0 24px;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+
 }
 
 .about-block-header {
@@ -639,8 +638,8 @@ a {
 
 .about-text-block p {
   color: var(--text-secondary);
-  font-size: 16px;
-  line-height: 1.7;
+  font-size: 17px;
+  line-height: 1.9;
   margin-bottom: 16px;
 }
 
@@ -648,39 +647,17 @@ a {
   margin-top: 8px;
 }
 
-.overview-image-col {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-/* Image Wrapper for About Section */
-.about-image-wrapper {
-  width: 100%;
-  height: 100%;
-  min-height: 350px;
-  border-radius: 6px;
-  overflow: hidden;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
-}
-
-.about-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
 .objectives-container {
-  width: 100%;
-  margin: 40px 0;
-  margin-bottom: 80px;
-  padding: 0 20px;
+
+    max-width:950px;
+    margin:70px auto;
+    padding:0 24px;
+
 }
 
 .objectives-card {
-  padding: 36px !important;
+  padding: 48px !important;
+  border-radius:18px;
 }
 
 .objectives-card h3 {
@@ -696,7 +673,7 @@ a {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 28px;
 }
 
 .objectives-item {
@@ -727,18 +704,35 @@ a {
   color: var(--text-secondary);
   font-size: 16px;
 }
-
-@media (min-width: 1024px) {
-  .overview-split-layout {
-    grid-template-columns: 1.2fr 0.8fr;
-  }
-}
 /*
 about layout changes
 */
 
 .overview-section {
   padding-top:1px !important;
+}
+@media (max-width:768px){
+
+.about-text-block{
+    padding:0 18px;
+}
+
+.objectives-container{
+    padding:0 16px;
+}
+
+.objectives-card{
+    padding:28px !important;
+}
+
+.about-text-block h3{
+    font-size:22px;
+}
+
+.about-text-block p{
+    font-size:16px;
+}
+
 }
 /* ==========================================================================
    SUBMISSIONS & CALL FOR PAPERS
@@ -866,19 +860,21 @@ about layout changes
 .track-card {
   cursor: pointer;
   overflow: hidden;
+  
 }
 
 .track-icon-wrapper {
-  background: rgba(0, 0, 0, 0.03);
+  background: rgba(0,0,0,0.03);
   width: 46px;
   height: 46px;
-  border-radius: 6px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  color: var(--accent-teal);
-  margin-bottom: 20px;
-  transition: var(--transition-smooth);
+  align-items: center;
+}
+
+.track-icon-wrapper svg {
+  width: 28px;
+  height: 28px;
 }
 
 .track-card:hover .track-icon-wrapper {
@@ -889,9 +885,11 @@ about layout changes
 .track-card h3 {
   font-size: 22px;
   color: var(--text-primary);
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   line-height: 1.4;
-  height: 95px;
+  min-height: 105px;
+  display: flex;
+  align-items: flex-start;
 }
 
 .track-hint {

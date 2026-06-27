@@ -109,7 +109,7 @@ export default function Navbar() {
             animate={{ height: isScrolled ? 34 : 44 }}
             transition={{ duration: 0.35, ease: "easeInOut" }}
           />
-          ICAEITSF <span>2027</span>
+          SANKALP <span>2027</span>
         </a>
 
         {/* Desktop Navbar */}

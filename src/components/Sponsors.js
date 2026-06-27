@@ -3,10 +3,11 @@ import Card from "./ui/Card";
 
 export default function Sponsors() {
   const sponsors = [
-    { name: "IEEE", type: "Technical Co-Sponsor (Requested)", desc: "World's largest technical professional organization dedicated to advancing technology." },
-    { name: "IETE", type: "Technical Partner (Proposed)", desc: "The Institution of Electronics and Telecommunication Engineers, India's leading professional society." },
-    { name: "IEI", type: "Institutional Partner", desc: "The Institution of Engineers (India), promoting engineering standards across the nation." },
-    { name: "WoS", type: "Indexing Partner (Proposed)", desc: "Leading global citation database to index accepted peer-reviewed proceedings." },
+    { name: "ISHRAE", type: "Technical Co-Sponsor (Requested)", desc: "India’s leading professional society advancing HVAC, refrigeration, indoor air quality, and sustainable building technologies." },
+    { name: "IGBC", type: "Technical Partner (Proposed)", desc: "India’s premier green building certification body promoting sustainable and energy-efficient built environments. " },
+    { name: "ASHRAE", type: "Institutional Partner", desc: "International professional society dedicated to sustainable technology for the built environment." },
+    { name: "IAA", type: "Indexing Partner (Proposed)", desc: "Promoting excellence, ethical practices, and innovation across the marketing communications industry" },
+    { name: "BEE", type: "Indexing Partner (Proposed)", desc: "National authority driving energy efficiency policies, standards, and conservation initiatives for sustainable development. " },
   ];
 
   return (
