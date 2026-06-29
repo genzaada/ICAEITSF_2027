@@ -8,6 +8,7 @@ export default function Hero() {
   const handleScrollTo = (e, id) => {
     e.preventDefault();
     const element = document.getElementById(id);
+
     if (element) {
       const offset = 80;
       const bodyRect = document.body.getBoundingClientRect().top;
@@ -30,11 +31,17 @@ export default function Hero() {
       <div className="hero-glow-2"></div>
 
       <div className="hero-content">
+
         <h1 className="hero-title">
-          International Conference on Advances of <br />
-          <span>Engineering & Intelligent Technologies for a Sustainable Future</span>
+          SANKALP
         </h1>
-        
+
+        <h2 className="hero-heading">
+          International Conference on Advances of Engineering
+          <br />
+          & Intelligent Technologies for a Sustainable Future
+        </h2>
+
         <motion.div
           className="hero-date-badge"
           initial={{ opacity: 0, y: 20, scale: 0.95 }}
@@ -55,10 +62,11 @@ export default function Hero() {
             22-23 January 2027
           </motion.span>
         </motion.div>
+
         <div className="hero-organizer">
-          
           Organized by MGM University, Chhatrapati Sambhajinagar
         </div>
+
         <div className="hero-buttons">
           <Button
             href="#submission"
@@ -68,6 +76,7 @@ export default function Hero() {
           >
             Submit Paper
           </Button>
+
           <Button
             href="#registration"
             onClick={(e) => handleScrollTo(e, "registration")}
@@ -77,6 +86,7 @@ export default function Hero() {
             Register Now
           </Button>
         </div>
+
       </div>
     </section>
   );

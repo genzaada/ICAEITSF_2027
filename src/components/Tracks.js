@@ -19,6 +19,7 @@ export default function Tracks() {
       id: 1,
       title: "Sustainable Energy Systems & Decarbonization",
       icon: <Zap size={30} strokeWidth={2} />,
+      image: "/tracks/energy.jpg",
       topics: [
         "Renewable Energy Systems",
         "Energy Storage Technologies",
@@ -32,6 +33,7 @@ export default function Tracks() {
       id: 2,
       title: "Smart & Sustainable Built Environments",
       icon: <Building2 size={30} strokeWidth={2} />,
+      image: "/tracks/building.jpg",
       topics: [
         "Intelligent Buildings",
         "Green & Net-Zero Buildings",
@@ -45,6 +47,7 @@ export default function Tracks() {
       id: 3,
       title: "Sustainable Manufacturing & Circular Economy",
       icon: <Factory size={30} strokeWidth={2} />,
+      image: "/tracks/manufacturing.jpg",
       topics: [
         "Sustainable Manufacturing Technologies",
         "Industry 5.0 Applications",
@@ -58,6 +61,7 @@ export default function Tracks() {
       id: 4,
       title: "Artificial Intelligence & Digital Technologies",
       icon: <Cpu size={30} strokeWidth={2} />,
+      image: "/tracks/ai.jpg",
       topics: [
         "AI & Machine Learning Applications",
         "Digital Image Processing",
@@ -72,6 +76,7 @@ export default function Tracks() {
       id: 5,
       title: "Climate Change & Environmental Management",
       icon: <Globe size={30} strokeWidth={2} />,
+      image: "/tracks/climate.jpg",
       topics: [
         "Climate Change Mitigation & Adaptation",
         "Environmental Impact Assessment",
@@ -85,6 +90,7 @@ export default function Tracks() {
       id: 6,
       title: "Sustainable Transportation & Infrastructure",
       icon: <Route size={30} strokeWidth={2} />,
+      image: "/tracks/transport.jpg",
       topics: [
         "Smart Transportation Systems",
         "Electric & Autonomous Vehicles",
@@ -108,10 +114,22 @@ export default function Tracks() {
         <div className="tracks-grid">
           {tracks.map((track) => (
             <Card
-              key={track.id}
-              className={`track-card ${activeTrack === track.id ? "active-track" : ""}`}
-              onClick={() => setActiveTrack(activeTrack === track.id ? null : track.id)}
-            >
+  key={track.id}
+  className={`track-card ${activeTrack === track.id ? "active-track" : ""}`}
+  onClick={() =>
+    setActiveTrack(activeTrack === track.id ? null : track.id)
+  }
+  
+>
+  <div
+  className="track-background"
+  style={{
+    backgroundImage: `url(${track.image})`,
+  }}
+></div>
+<div className="track-content">
+
+
               <div className="track-icon-wrapper">{track.icon}</div>
               <h3>{track.title}</h3>
               <p className="track-hint">Click to expand topics</p>
@@ -128,6 +146,7 @@ export default function Tracks() {
                   ))}
                 </ul>
               </div>
+              </div>   
             </Card>
           ))}
         </div>
