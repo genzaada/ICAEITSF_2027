@@ -991,12 +991,25 @@ about layout changes
 
 .track-card {
   position: relative;
-  cursor: pointer;
   overflow: hidden;
+
+  cursor: pointer;
+
   min-height: 410px;
+
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+
+  border-radius: 12px;
+
+  transition:
+    transform .35s ease,
+    box-shadow .35s ease;
+}
+
+.track-card:hover{
+    transform:translateY(-6px);
 }
 
 .track-background {
@@ -1010,27 +1023,30 @@ about layout changes
   z-index: 0;
 }
 
-.track-background::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(0,0,0,.82),
-    rgba(0,0,0,.45),
-    rgba(0,0,0,.20)
-);
+.track-background::after{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:linear-gradient(
+        to top,
+        rgba(5,10,18,.92) 0%,
+        rgba(5,10,18,.68) 45%,
+        rgba(5,10,18,.35) 100%
+    );
 }
-.track-content {
-  position: relative;
-  z-index: 2;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+.track-content{
+    position:relative;
+    z-index:2;
 
-  flex: 1;
-  padding: 28px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+
+    flex:1;
+
+    padding:32px;
 }
 
 
@@ -1040,12 +1056,22 @@ about layout changes
 }
 
 .track-icon-wrapper {
-  background: rgba(0,0,0,0.03);
   width: 46px;
   height: 46px;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
+
+  color: #ffffff;
+
+  transition: all 0.35s ease;
 }
 
 .track-icon-wrapper svg {
@@ -1054,38 +1080,43 @@ about layout changes
 }
 
 .track-card:hover .track-icon-wrapper {
-  background: rgba(255,255,255,0.92);
-  color: var(--accent-brown);
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--accent-teal);
+
+  transform: scale(1.08);
 }
+
 
 .track-card h3 {
   font-size: 22px;
-  color: white;
+  color: #ffffff;
   margin-bottom: 12px;
-  line-height: 1.4;
+  line-height: 1.35;
   min-height: 105px;
+
   display: flex;
   align-items: flex-start;
-}
 
-.track-hint {
-  font-size: 13px;
-  color: rgba(255,255,255,0.85);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  font-weight: 700;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.65);
+}
+.track-hint{
+    font-size:13px;
+    color:rgba(255,255,255,.95);
+    text-transform:uppercase;
+    letter-spacing:.06em;
+    font-weight:700;
+    text-shadow:0 1px 3px rgba(0,0,0,.6);
 }
 
 .track-topics-container {
-  .track-topics-container {
+  max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s ease;
-}
+  transition: max-height 0.45s ease;
 }
 
 .track-topics-container.expanded {
   max-height: 1000px;
-  margin-top: 20x;
+  margin-top: 20px;
 }
 
 .track-topics-list {
@@ -1102,10 +1133,11 @@ about layout changes
     gap: 10px;
     align-items: flex-start;
 
-    color: rgba(255,255,255,.92);
+    color: #ffffff;
     font-size: 16px;
+    line-height: 1.6;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.6);
 }
-
 .track-topic-item svg {
   width: 14px;
   height: 14px;
